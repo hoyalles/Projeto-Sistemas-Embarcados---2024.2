@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb1",
+      "top": -3.4,
+      "left": -111,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": -162.3,
+      "left": -9.85,
+      "rotate": 270,
+      "attrs": { "env": "micropython-20220618-v1.19.1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": 125.4,
+      "left": -90.6,
+      "rotate": 90,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn2",
+      "top": 125.4,
+      "left": 168.6,
+      "rotate": 90,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 78.4,
+      "left": 23.4,
+      "rotate": 180,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 33.2,
+      "left": 20.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "bb1:28t.e", "bb1:bn.23", "orange", [ "v0" ] ],
+    [ "bb1:3t.e", "bb1:bn.2", "orange", [ "v0" ] ],
+    [ "pico:GP2", "bb1:30t.e", "yellow", [ "h-86.4", "v144" ] ],
+    [ "pico:GP3", "bb1:1t.e", "blue", [ "h259.2", "v144" ] ],
+    [ "bb1:bn.25", "pico:GND.1", "black", [ "v-17.9", "h46.4" ] ],
+    [ "bb1:17b.g", "pico:GP4", "red", [ "h-48", "v-105.6" ] ],
+    [ "btn2:1.l", "bb1:1t.d", "", [ "$bb" ] ],
+    [ "btn2:2.l", "bb1:3t.d", "", [ "$bb" ] ],
+    [ "btn2:1.r", "bb1:1t.a", "", [ "$bb" ] ],
+    [ "btn2:2.r", "bb1:3t.a", "", [ "$bb" ] ],
+    [ "btn1:1.l", "bb1:28t.d", "", [ "$bb" ] ],
+    [ "btn1:2.l", "bb1:30t.d", "", [ "$bb" ] ],
+    [ "btn1:1.r", "bb1:28t.a", "", [ "$bb" ] ],
+    [ "btn1:2.r", "bb1:30t.a", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:bn.13", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:16b.h", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:17b.f", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:16b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
