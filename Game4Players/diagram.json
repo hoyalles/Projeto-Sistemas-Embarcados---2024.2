@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "author": "CARLOS KAIQUE ROSA SILVA",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-breadboard-half",
+      "id": "bb1",
+      "top": 150.2,
+      "left": 13.8,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": -37.5,
+      "left": 124.55,
+      "rotate": 270,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn2",
+      "top": 212.2,
+      "left": 292,
+      "rotate": 90,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": 212.2,
+      "left": 32.8,
+      "rotate": 90,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 232,
+      "left": 157.8,
+      "rotate": 180,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 187.2,
+      "left": 153.05,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn3",
+      "top": 279.4,
+      "left": 32.8,
+      "rotate": 90,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn4",
+      "top": 279.4,
+      "left": 292,
+      "rotate": 90,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "pico:GND.1", "bb1:bn.25", "black", [ "v38.4", "h-36.8" ] ],
+    [ "pico:GP2", "bb1:30b.j", "gold", [ "v28.8", "h-86.4", "v57.6" ] ],
+    [ "pico:GP3", "bb1:1b.j", "blue", [ "v19.2", "h220.8" ] ],
+    [ "pico:GP4", "bb1:16b.h", "magenta", [ "v0" ] ],
+    [ "bb1:28b.j", "bb1:bn.23", "cyan", [ "v0" ] ],
+    [ "bb1:3b.j", "bb1:bn.2", "cyan", [ "v0" ] ],
+    [ "pico:GP5", "bb1:30t.e", "red", [ "v19.2", "h-153.6", "v153.6" ] ],
+    [ "pico:GP6", "bb1:1t.e", "green", [ "h201.6", "v172.8" ] ],
+    [ "bb1:28t.e", "bb1:bn.22", "cyan", [ "h9.6", "v-106.9" ] ],
+    [ "bb1:3t.e", "bb1:bn.3", "cyan", [ "h-9.6", "v-106.9" ] ],
+    [ "led1:A", "bb1:16b.f", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:15b.f", "", [ "$bb" ] ],
+    [ "btn1:1.l", "bb1:28b.i", "", [ "$bb" ] ],
+    [ "btn1:2.l", "bb1:30b.i", "", [ "$bb" ] ],
+    [ "btn1:1.r", "bb1:28b.f", "", [ "$bb" ] ],
+    [ "btn1:2.r", "bb1:30b.f", "", [ "$bb" ] ],
+    [ "btn2:1.l", "bb1:1b.i", "", [ "$bb" ] ],
+    [ "btn2:2.l", "bb1:3b.i", "", [ "$bb" ] ],
+    [ "btn2:1.r", "bb1:1b.f", "", [ "$bb" ] ],
+    [ "btn2:2.r", "bb1:3b.f", "", [ "$bb" ] ],
+    [ "btn3:1.l", "bb1:28t.d", "", [ "$bb" ] ],
+    [ "btn3:2.l", "bb1:30t.d", "", [ "$bb" ] ],
+    [ "btn3:1.r", "bb1:28t.a", "", [ "$bb" ] ],
+    [ "btn3:2.r", "bb1:30t.a", "", [ "$bb" ] ],
+    [ "btn4:1.l", "bb1:1t.d", "", [ "$bb" ] ],
+    [ "btn4:2.l", "bb1:3t.d", "", [ "$bb" ] ],
+    [ "btn4:1.r", "bb1:1t.a", "", [ "$bb" ] ],
+    [ "btn4:2.r", "bb1:3t.a", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:bn.12", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:15b.h", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
