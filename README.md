@@ -58,9 +58,11 @@ O jogo de reflexos testa a rapidez dos jogadores ao pressionar um botão assim q
 #### **Imagem ilustrando que o jogo foi embarcado na Raspberry Pi:**
 <img src= "https://drive.google.com/uc?export=view&id=1u5mqmAliPXpgY_qHVdCgMlh95JQKp33M" width="400" height="570">
 
+## 📜 Licença  
+Este projeto está licenciado sob a [MIT License](LICENSE).  
+
 ## **Agradecimentos**
 ###
 - **Professor Juan Sebastian Toquica Arenas**: Orientador do projeto e professor da disciplina de Sistemas Embarcados na UFC Itapajé
-
 ###
 - **Equipe do Projeto:** Carlos Kaique Rosa Silva ([Kaique Silva](https://github.com/hoyalles)) e Nívea Morais Vaes ([Nívea Morais](https://github.com/Vaes3Nivea))
