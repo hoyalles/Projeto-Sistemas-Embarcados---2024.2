@@ -1,4 +1,4 @@
-# 🎮 Jogo de Reflexos com Raspberry Pi e Simulação no Wokwi
+# Jogo de Reflexos com Raspberry Pi e Simulação no Wokwi
 
 ## 📖 Sobre o Projeto
 Este projeto foi desenvolvido para a disciplina de **Sistemas Embarcados** na **UFC - Campus Itapajé**, ministrada pelo professor **Juan Sebastian Toquica Arenas**.  
@@ -27,7 +27,7 @@ O jogo de reflexos testa a rapidez dos jogadores ao pressionar um botão assim q
 -  **Bibliotecas:** gpiozero, time, random  
 -  **IDE usada na Raspberry:** Thonny Python  
 
-##  Como Rodar  
+##  ⚡ Como Usar 
 ### **Simulação no Wokwi**  
 1. Acesse um dos links acima para a versão desejada.  
 2. Clique em "Run" e interaja com os botões.  
@@ -54,14 +54,14 @@ O jogo de reflexos testa a rapidez dos jogadores ao pressionar um botão assim q
 #### **Simulação de 4 jogadores:**
 <img src= "https://drive.google.com/uc?export=view&id=10z0R2uNt-yKnEkRw4rD5KvJ_FeplgiZg" width="400">
 
-### 🖥️ Execução na Raspberry Pi 
+###  Execução na Raspberry Pi 
 #### **Imagem ilustrando que o jogo foi embarcado na Raspberry Pi:**
 <img src= "https://drive.google.com/uc?export=view&id=1u5mqmAliPXpgY_qHVdCgMlh95JQKp33M" width="400" height="570">
 
 ## 📜 Licença  
 Este projeto está licenciado sob a [MIT License](LICENSE).  
 
-## **Agradecimentos**
+## 🎓 **Agradecimentos**
 ###
 - **Professor Juan Sebastian Toquica Arenas**: Orientador do projeto e professor da disciplina de Sistemas Embarcados na UFC Itapajé
 ###
