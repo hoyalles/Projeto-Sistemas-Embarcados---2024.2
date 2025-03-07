@@ -39,7 +39,7 @@ O jogo de reflexos testa a rapidez dos jogadores ao pressionar um botão assim q
 
 2. Clone este repositório e execute:** 
     ```bash
-    git clone https://github.com/hoyalles/Projeto-Sistemas-Embarcados---2024.2.git
+    git clone https://github.com/hoyalles/ReactionGame.git
     cd GameFinal
     python3 test2.py
 
